@@ -15,6 +15,10 @@ c)Then use git merge develop this merges the non active branch (develop) to acti
 
 
 
+
+
+
+
 After Person Y pulled the project he repeated the steps:-
 5)Change the branch to develop using git checkout develop
 6)Pull the code in develop branch using git pull origin develop
@@ -26,4 +30,5 @@ Came back to Person X, and Pulled Y's code in develop branch befor e merging
 Finally merged the branches
 
 
-
+Note to see the changes in GitHub repository in website use the push command first after adding and commiting
+Btw American Developer Y is making changes :)
