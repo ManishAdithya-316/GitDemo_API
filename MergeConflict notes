@@ -1,0 +1,25 @@
+Merge Conflict
+Example way of creating merge conflict in master file add the following data:-
+Alphabets
+a
+b
+c
+d
+e
+f
+
+use git add and git commit
+then use commant git checkout -b develop2 to create a develop2 branch based on this data
+
+then in develop2 branch come to this file and add below data
+1
+2
+3
+4
+5
+
+at the same time go back to master branch and remove e,f
+Now come back to develop2 branch and add1 number, do git add, git commit 
+and try to merge master branch(non active) to this active branch(develop2)
+
+After you get merge conflict contact the developer who developed this code and fix/resolve it manually and finmally merge code
