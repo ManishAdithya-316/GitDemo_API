@@ -1,1 +1,73 @@
 Line from master 
+
+Line from develop2 
+ develop2
+
+Steps to create and resolve merge conflict:-
+🔧 How to force a merge conflict in your repo
+Since you already have master and develop2, here’s the clean recipe in CMD Prompt:
+
+On master branch
+
+cmd
+git checkout master
+echo Line from master > notes.txt
+git add notes.txt
+git commit -m "Edit notes.txt in master"
+On develop2 branch
+
+cmd
+git checkout develop2
+echo Line from develop2 > notes.txt
+git add notes.txt
+git commit -m "Edit notes.txt in develop2"
+Merge develop2 into master
+
+cmd
+git checkout master
+git merge develop2
+👉 Now Git will throw a merge conflict because both branches changed the same line in notes.txt.
+
+Conenct with devloper of code and fix code issues, remove duplicate code,etc and 
+remove special characters <<<<<<< HEAD  ======= >>>>>>> 
+
+🔧 Resolving a Merge Conflict
+Open the conflicted file  
+Git will mark it with conflict markers:
+
+Code
+<<<<<<< HEAD
+content from master
+=======
+content from develop2
+>>>>>>> develop2
+Edit the file
+
+Remove the <<<<<<<, =======, >>>>>>> lines.
+
+Keep whichever content you want (master, develop2, or a mix).
+
+Save the file.
+
+Stage the resolution
+
+cmd
+git add "notes.txt"
+Commit the merge
+
+cmd
+git commit -m "Resolved conflict in notes.txt"
+⚡ Shortcut if you want to auto‑resolve
+Keep master’s changes only:
+
+cmd
+git checkout --ours notes.txt
+git add notes.txt
+git commit -m "Resolved conflict using master version"
+Keep develop2’s changes only:
+
+cmd
+git checkout --theirs notes.txt
+git add notes.txt
+git commit -m "Resolved conflict using develop2 version"
+👉 After this, your merge is complete and you can continue working normally.
