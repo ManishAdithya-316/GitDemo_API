@@ -5,7 +5,8 @@ a
 b
 c
 d
-
+e
+f
 
 use git add and git commit
 then use commant git checkout -b develop2 to create a develop2 branch based on this data
