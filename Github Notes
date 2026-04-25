@@ -12,3 +12,18 @@ a)Switch to master branch using git checkout master
 b)Check branch for safety using git branch
 c)Then use git merge develop this merges the non active branch (develop) to active branch master
 10)Make any new changes to the merged master branch and then push the code (git add,git commit,git push)
+
+
+
+After Person Y pulled the project he repeated the steps:-
+5)Change the branch to develop using git checkout develop
+6)Pull the code in develop branch using git pull origin develop
+2)Modified Github notes.txt which is present in develop branch not master branch
+3)Pushed the code to devlop branch in github:- 1)git add * 2)git commit -m "American Dev" 3)git push origin develop
+
+Came back to Person X, and Pulled Y's code in develop branch befor e merging
+
+Finally merged the branches
+
+
+
