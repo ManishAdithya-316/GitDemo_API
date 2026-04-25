@@ -70,4 +70,5 @@ cmd
 git checkout --theirs notes.txt
 git add notes.txt
 git commit -m "Resolved conflict using develop2 version"
-👉 After this, your merge is complete and you can continue working normally.
+👉 After this, your merge is complete and you can continue working normally. 
+No need to merge again as develop2 branch/branch's code is already merged with amster or do vice versa if needed.
