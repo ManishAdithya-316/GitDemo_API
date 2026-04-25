@@ -23,3 +23,7 @@ Now come back to develop2 branch and add1 number, do git add, git commit
 and try to merge master branch(non active) to this active branch(develop2)
 
 After you get merge conflict contact the developer who developed this code and fix/resolve it manually and finmally merge code
+
+Addind new data in develop branch 2 while removing e,f from master branch
+
+Note:- git add "MergeConflict notes" is syntax to add individual files
