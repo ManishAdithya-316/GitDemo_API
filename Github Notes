@@ -12,3 +12,7 @@ a)Switch to master branch using git checkout master
 b)Check branch for safety using git branch
 c)Then use git merge develop this merges the non active branch (develop) to active branch master
 10)Make any new changes to the merged master branch and then push the code (git add,git commit,git push)
+
+
+Note to see the changes in GitHub repository in website use the push command first after adding and commiting
+Btw American Developer Y is making changes :)
