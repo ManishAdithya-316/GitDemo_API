@@ -1,0 +1,327 @@
+# Created at 2026-04-18T20:32:50.703
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (20468@DESKTOP-IF7542D):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@25.0.2/sun.nio.ch.SocketDispatcher.read0(Native Method)
+        at java.base@25.0.2/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:47)
+        at java.base@25.0.2/sun.nio.ch.NioSocketImpl.tryRead(NioSocketImpl.java:255)
+        at java.base@25.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:305)
+        at java.base@25.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:354)
+        at java.base@25.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:798)
+        at java.base@25.0.2/java.net.Socket$SocketInputStream.implRead(Socket.java:974)
+        at java.base@25.0.2/java.net.Socket$SocketInputStream.read(Socket.java:964)
+        at java.base@25.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+        at java.base@25.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483)
+        at java.base@25.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+        at java.base@25.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+        at java.base@25.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1068)
+        at app//org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161)
+        at app//org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+        at app//org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276)
+        at app//org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+        at app//org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+        at app//org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+        at app//org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+        at app//org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+        at app//org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:207)
+        at app//org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+        at app//org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+        at app//org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+        at app//org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+        at app//org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+        at app//org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+        at app//io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+        at app//io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+        at app//io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$DMH/0x000000009d555000.invokeVirtual(LambdaForm$DMH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d555800.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24a000.guardWithCatch(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24ac00.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24b000.guard(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24ac00.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d556000.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$DMH/0x000000009d1da400.invokeStatic(LambdaForm$DMH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d248400.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.linkToCallSite(Invokers$Holder)
+        at app//io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1567)
+        at java.base@25.0.2/java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(DirectMethodHandle$Holder)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d553400.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at java.base@25.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:158)
+        at java.base@25.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+        at java.base@25.0.2/java.lang.reflect.Method.invoke(Method.java:565)
+        at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+        at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+        at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+        at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+        at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+        at app//groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$DMH/0x000000009d1e2c00.invokeInterface(LambdaForm$DMH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d550800.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d551400.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d551800.guard(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d551400.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d551800.guard(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d551400.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d552400.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$DMH/0x000000009d1da400.invokeStatic(LambdaForm$DMH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d284400.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.linkToCallSite(Invokers$Holder)
+        at app//io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1316)
+        at java.base@25.0.2/java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(DirectMethodHandle$Holder)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d39e000.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at java.base@25.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:158)
+        at java.base@25.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+        at java.base@25.0.2/java.lang.reflect.Method.invoke(Method.java:565)
+        at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
+        at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
+        at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
+        at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
+        at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
+        at app//groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$DMH/0x000000009d1e2c00.invokeInterface(LambdaForm$DMH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d39c800.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24ac00.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24b000.guard(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24ac00.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24b000.guard(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d24ac00.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d39d000.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at app//org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$DMH/0x000000009d1da400.invokeStatic(LambdaForm$DMH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d248400.invoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.Invokers$Holder.linkToCallSite(Invokers$Holder)
+        at app//io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$DMH/0x000000009d1e2000.invokeInterface(LambdaForm$DMH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d297400.guardWithCatch(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d298000.reinvoke(LambdaForm$MH)
+        at java.base@25.0.2/java.lang.invoke.LambdaForm$MH/0x000000009d298400.guard(LambdaForm$MH)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@25.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@25.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+        at java.base@25.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@25.0.2/java.lang.Object.wait(Object.java:389)
+        at java.base@25.0.2/java.lang.Object.wait(Object.java:351)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:137)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+        at java.base@25.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:165)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@25.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@25.0.2/java.lang.Object.wait(Object.java:389)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)
+        at java.base@25.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:146)
+        at java.base@25.0.2/java.lang.Thread.runWith(Thread.java:1487)
+        at java.base@25.0.2/java.lang.Thread.run(Thread.java:1474)
+        at java.base@25.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:271)
+        at java.base@25.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1803)
+        at java.base@25.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1166)
+        at java.base@25.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:883)
+        at java.base@25.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1016)
+        at java.base@25.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+        at java.base@25.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+        at java.base@25.0.2/java.lang.Thread.runWith(Thread.java:1487)
+        at java.base@25.0.2/java.lang.Thread.run(Thread.java:1474)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@25.0.2/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@25.0.2/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:184)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:579)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:79)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:315)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:367)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:330)
+        at java.base@25.0.2/java.lang.Thread.runWith(Thread.java:1487)
+        at java.base@25.0.2/java.lang.Thread.run(Thread.java:1474)
+
+"ForkJoinPool.commonPool-worker-1" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-2" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-4" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-3" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-5" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-6" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-9" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-8" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-12" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-10" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-11" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-13" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-14" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-7" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"ForkJoinPool.commonPool-worker-15" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2109)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2063)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2027)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+"PIC-Cleaner" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@25.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)
+        at java.base@25.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:520)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:4364)
+        at java.base@25.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:4310)
+        at java.base@25.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1752)
+        at java.base@25.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+        at app//org.codehaus.groovy.vmplugin.v8.CacheableCallSite.lambda$static$2(CacheableCallSite.java:155)
+        at app//org.codehaus.groovy.vmplugin.v8.CacheableCallSite$$Lambda/0x000000009d1d53d0.run(Unknown Source)
+        at java.base@25.0.2/java.lang.Thread.runWith(Thread.java:1487)
+        at java.base@25.0.2/java.lang.Thread.run(Thread.java:1474)
+
+"DFA-cache-cleaner[LexerAtnManager]" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@25.0.2/java.lang.Object.wait(Object.java:389)
+        at java.base@25.0.2/java.lang.Object.wait(Object.java:351)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:137)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+        at app//org.apache.groovy.parser.antlr4.internal.atnmanager.AtnManager.lambda$new$0(AtnManager.java:59)
+        at app//org.apache.groovy.parser.antlr4.internal.atnmanager.AtnManager$$Lambda/0x000000009d4fa588.run(Unknown Source)
+        at java.base@25.0.2/java.lang.Thread.runWith(Thread.java:1487)
+        at java.base@25.0.2/java.lang.Thread.run(Thread.java:1474)
+
+"DFA-cache-cleaner[ParserAtnManager]" 
+   java.lang.Thread.State: WAITING
+        at java.base@25.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@25.0.2/java.lang.Object.wait(Object.java:389)
+        at java.base@25.0.2/java.lang.Object.wait(Object.java:351)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:137)
+        at java.base@25.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+        at app//org.apache.groovy.parser.antlr4.internal.atnmanager.AtnManager.lambda$new$0(AtnManager.java:59)
+        at app//org.apache.groovy.parser.antlr4.internal.atnmanager.AtnManager$$Lambda/0x000000009d4fa588.run(Unknown Source)
+        at java.base@25.0.2/java.lang.Thread.runWith(Thread.java:1487)
+        at java.base@25.0.2/java.lang.Thread.run(Thread.java:1474)
+
+
+
